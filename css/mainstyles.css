@@ -77,8 +77,16 @@ a {
     color: #3BCBCA;
 }
 
+/* --- MAIN --- */
 /* --- MAIN CONTENT --- */
 .main-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* --- ARTICLES --- */
+.article {
+    filter: grayscale(40%);
     width: 100%;
     height: 100%;
 }

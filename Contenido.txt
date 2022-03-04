@@ -1,7 +1,7 @@
 - 4 Páginas // HOME, EJERCICIOS, DIETAS, CONTACTAR
 -- Header, Nav, footer, main, section, article
 -- Slider automativo de fotos
-- Rotación de fotos con hover
+-- Rotación de fotos con hover
 -- Animación
 -- Transición
 -- Transformación
