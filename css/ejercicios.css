@@ -60,8 +60,6 @@
 .main-content {
     padding-top: 6rem;
     background-color: #083533;
-    display: grid;
-    grid-template-columns: 80% 20%;
     padding-bottom: 3%;
 }
 
@@ -106,8 +104,4 @@
     margin-bottom: 1.5rem;
     padding-bottom: 0.6rem;
     border-bottom: 0.15rem solid rgb(117, 117, 117);
-}
-
-.article-content a:hover h2 {
-    color: #3BCBCA;
 }

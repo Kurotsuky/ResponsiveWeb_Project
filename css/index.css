@@ -125,32 +125,5 @@
 
 /* --- PAGINACION --- */
 .pagination {
-    filter: grayscale(40%);
     background-color: #226F6D;
-    padding: 5% 0 3% 0;
-
-    display: flex;
-    justify-content: center;
-}
-
-.pagination-content {
-    width: 50%;
-    border-bottom: 0.15rem solid rgb(27, 27, 27);
-
-    display: flex;
-    justify-content: flex-end;
-}
-
-.pagination-content span:first-child {
-    margin-right: 3%;
-}
-
-.pagination-content span a {
-    padding-right: 0.5rem;
-    color: #1A1B27;
-}
-
-.pagination-content span a:first-of-type {
-    color: #BBBA39;
-    text-shadow: 0.125rem 0 0 black, -0.125rem 0 0 black, 0 0.125rem 0 black, 0 -0.125rem 0 black, 0.0625rem 0.0625rem black, -0.0625rem -0.0625rem 0 black, 0.0625rem -0.0625rem 0 black, -0.0625rem 0.0625rem 0 black;
 }

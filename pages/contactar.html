@@ -18,5 +18,38 @@
             <li class="nav-li"><a href="#">Contactar</a></li>
         </ul>
     </nav>
+
+    <header class="header">
+        <div class="header-title">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna duda o pregunta, no dudes en ponerte en contacto con nosotros a través de nuestro formulario.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="form-container">
+            <form action="formulario.php" method="post">
+                <div class="form-name">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="formName" name="name" required>
+                </div>
+                
+                <div class="form-email">
+                    <label for="email">Email:</label>
+                    <input type="text" id="formEmail" name="email" required>
+                </div>             
+                
+                <div class="form-topic">
+                    <label for="topic">Asunto:</label>
+                    <input type="text" id="formTopic" name="topic" required>
+                </div>
+                
+                <div class="form-message">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="formMessage" name="message" cols="50" rows="10" required></textarea>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

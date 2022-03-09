@@ -60,8 +60,6 @@
 .main-content {
     padding-top: 6rem;
     background-color: #0D3631;
-    display: grid;
-    grid-template-columns: 80% 20%;
     padding-bottom: 3%;
 }
 
