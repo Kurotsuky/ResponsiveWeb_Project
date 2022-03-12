@@ -5,51 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactar - Ejercítate</title>
-    <link rel="stylesheet" href="/css/mainstyles.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/contactar.css">
 </head>
 <body>
-    <nav class="nav">
-        <h1 class="nav-title"><a href="/">Ejercítate</a></h1>
-        <ul class="nav-ul">
-            <li class="nav-li"><a href="/">Inicio</a></li>
-            <li class="nav-li"><a href="ejercicios.html">Ejercicios</a></li>
-            <li class="nav-li"><a href="dietas.html">Dietas</a></li>
-            <li class="nav-li"><a href="#">Contactar</a></li>
+    <nav class="navbar sticky">
+        <h1 class="navbar-header"><a href="/">Ejercítate</a></h1>
+        <ul class="nav">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="ejercicios.html">Ejercicios</a></li>
+            <li><a href="dietas.html">Dietas</a></li>
+            <li><a href="contactar.html">Contactar</a></li>
         </ul>
     </nav>
 
-    <header class="header">
+    <header class="contactar-header">
         <div class="header-title">
             <h2>Contáctanos</h2>
             <p>Si tienes alguna duda o pregunta, no dudes en ponerte en contacto con nosotros a través de nuestro formulario.</p>
         </div>
     </header>
 
-    <main class="main-content">
+    <main class="contactar-main">
         <div class="form-container">
-            <form action="formulario.php" method="post">
-                <div class="form-name">
+            <form action="formulario.php" method="post" id="contactarForm">
+                <div class="form-field form-name">
                     <label for="name">Nombre:</label>
-                    <input type="text" id="formName" name="name" required>
+                    <input type="text" id="formName" name="name" required />
                 </div>
-                
-                <div class="form-email">
+
+                <div class="form-field form-email">
                     <label for="email">Email:</label>
-                    <input type="text" id="formEmail" name="email" required>
-                </div>             
-                
-                <div class="form-topic">
-                    <label for="topic">Asunto:</label>
-                    <input type="text" id="formTopic" name="topic" required>
+                    <input type="text" id="formEmail" name="email" required />
                 </div>
-                
-                <div class="form-message">
+
+                <div class="form-field form-topic">
+                    <label for="topic">Asunto:</label>
+                    <input type="text" id="formTopic" name="topic" required />
+                </div>
+
+                <div class="form-areafield form-message">
                     <label for="message">Mensaje:</label>
-                    <textarea id="formMessage" name="message" cols="50" rows="10" required></textarea>
+                    <textarea id="formMessage" name="message" rows="10" required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit">Enviar</button>
                 </div>
             </form>
         </div>
     </main>
+
+    <footer class="contactar-footer">
+        <div class="footer-container">
+            <div class="footer-help">
+                <ul>
+                    <li>Ayuda</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Centro de Soporte</a></li>
+                    <li><a href="contactar.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-help">
+                <ul>
+                    <li>Legal</li>
+                    <li><a href="#">Nota legal</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                    <li><a href="#">Política de privacidad y cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-help">
+                <ul>
+                    <li>Social</li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
