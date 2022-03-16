@@ -11,15 +11,22 @@ html {
   width: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: calc(1rem + 1px);
+  }
+}
+
 body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  background-color: #414150;
+  background-color: #1e222e;
   color: #efffff;
 }
 
 p {
   text-align: justify;
+  font-size: 1.1rem;
 }
 
 ul,
@@ -30,6 +37,10 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 strong {
@@ -43,7 +54,7 @@ strong {
   justify-content: space-between;
   padding: 0 2rem;
   background-color: #212332;
-  font-size: 1.1rem;
+  font-size: 1.2em;
   z-index: 1;
 
   font-weight: 500;
@@ -91,6 +102,47 @@ strong {
   color: #e2e7e8;
 }
 
+@media screen and (max-width: 720px) {
+  .navbar {
+    display: block;
+    height: auto;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  .sticky {
+    position: relative;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .nav > li {
+    width: 100%;
+    height: 4.5rem;
+  }
+
+  .nav > li > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav > li > a:hover {
+    background-color: rgb(56, 60, 85, 0.15);
+  }
+
+  .navbar-header {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
 /* --- HEADER --- */
 header {
   width: 100%;
@@ -132,7 +184,7 @@ main {
 }
 
 .header-categories {
-  height: 5rem;
+  min-height: 5rem;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -145,6 +197,10 @@ main {
   height: 100%;
 }
 
+.header-categories > li {
+  height: 5rem;
+}
+
 .header-categories > li > a {
   display: flex;
   justify-content: center;
@@ -155,6 +211,43 @@ main {
 .header-categories > li > a:hover {
   color: #bda900;
   background-color: rgb(0, 38, 88, 0.15);
+}
+
+@media screen and (max-width: 1024px) {
+  .header-categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header-categories > li {
+    width: 20%;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header-title {
+    width: 100%;
+    height: 8rem;
+
+    display: grid;
+    grid-template-rows: none;
+    align-items: center;
+  }
+
+  .header-title p {
+    display: none;
+  }
+
+  .header-categories > li {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header-categories > li {
+    width: 33.33%;
+  }
 }
 
 /* --- ARTICLES LIST --- */
@@ -189,7 +282,7 @@ main {
 
 .articles-list > article .article-content img {
   width: 100%;
-  height: 21.3vw;
+  height: 20vw;
   margin-bottom: 0.5rem;
   border-radius: 1rem;
   filter: grayscale(60%);
@@ -212,6 +305,55 @@ main {
 
 .articles-list > article .article-content p:nth-child(3) {
   margin-top: 1.25rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .articles-list {
+    width: 50%;
+  }
+
+  .articles-list > article .article-content img {
+    height: 25vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .articles-list {
+    width: 85%;
+  }
+
+  .articles-list > article .article-content img {
+    height: 42.5vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .articles-list {
+    width: 95%;
+    font-weight: 300;
+    padding-top: 5rem;
+  }
+
+  .articles-list > article .article-content img {
+    height: 47.5vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .articles-list {
+    width: 98%;
+    padding-top: 6rem;
+  }
+
+  .articles-list > article .article-content img {
+    height: 49vw;
+  }
+
+  .articles-list > article .article-content p,
+  .articles-list > article .article-content h2 {
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+  }
 }
 
 /* --- PAGINACION --- */
@@ -250,11 +392,22 @@ main {
   color: #bbba39;
 }
 
+@media screen and (max-width: 1024px) {
+  .pagination-container {
+    margin-top: 12.5%;
+  }
+
+  .pagination {
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+}
 /* --- FOOTER --- */
 footer {
   background-color: #0c1122;
   height: 18rem;
   color: #c8cccd;
+  font-size: 1.2rem;
 
   display: flex;
   justify-content: center;
@@ -269,11 +422,31 @@ footer {
 
 .footer-help li:first-child {
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
   padding-bottom: 10%;
 }
 
 .footer-help li a:hover {
   color: #2c8f8f;
+}
+
+@media screen and (max-width: 720px) {
+  .footer-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  footer {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .footer-container {
+    width: 90%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
 }

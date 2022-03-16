@@ -1,6 +1,8 @@
 /* --- HEADER --- */
 .home-header {
   height: 45.27vw;
+  display: flex;
+  align-items: center;
   background-color: #3b3b49;
   background-image: linear-gradient(
     325deg,
@@ -16,7 +18,6 @@
   margin: auto;
   width: 75%;
   height: 80%;
-  transform: translate(0, 12%);
   overflow: hidden;
 }
 
@@ -82,5 +83,40 @@
   }
   100% {
     margin-left: -500%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-header {
+    height: 48.288vw;
+  }
+
+  .slider-container {
+    width: 80%;
+  }
+
+  .slider-description-text {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-header {
+    height: 52.9659vw;
+  }
+
+  .slider-container {
+    width: 97.5%;
+    height: 90%;
+  }
+
+  .slider-description-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home-header {
+    display: none;
   }
 }
