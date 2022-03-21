@@ -316,6 +316,12 @@ main {
   margin-bottom: 0.5rem;
   border-radius: 1rem;
   filter: grayscale(60%);
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+
+.articles-list > article .article-content:hover img {
+  transform: rotateY(180deg);
 }
 
 .articles-list > article .article-content h2 {
